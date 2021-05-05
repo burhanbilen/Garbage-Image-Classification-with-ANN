@@ -18,8 +18,7 @@ train_datagen=ImageDataGenerator(
     zoom_range=0.25,
     vertical_flip=True,
     horizontal_flip=True,
-    fill_mode='wrap',
-    validation_split=0.1)
+    fill_mode='wrap')
 
 val_datagen=ImageDataGenerator(rescale=1./255, validation_split=0.1)
 test_datagen=ImageDataGenerator(rescale=1./255)
